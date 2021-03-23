@@ -1,0 +1,384 @@
+/*  Fonts
+    -----
+    font-family: 'Lora', serif;
+    font-family: 'Ubuntu', sans-serif;
+ */
+
+ body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+ }
+
+ header {
+ 	padding: 2em 0;
+ 	background: #F8F8F8;
+ }
+
+ ul {
+ 	list-style-type: none;
+ }
+
+ li {
+ 	margin-left: 2em;
+ 	font-family: 'Ubuntu', sans-serif;
+ 	font-size: 1rem;
+ 	color: #707070;
+ }
+
+ h1 {
+ 	font-size: 2rem;
+ 	font-weight: 400;
+ 	color: #143774;
+ 	font-family: 'Lora', serif;
+ 	margin: 0 auto;
+ }
+
+ nav a {
+ 	font-family: inherit;
+ 	font-weight: 700;
+ 	color: inherit;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	padding: 0.25rem 0;
+ }
+
+ nav a:hover,
+ nav a:focus {
+ 	color: #1792d2;
+ }
+
+ .logo {
+ 	text-align: center;
+ }
+
+ .subtitle {
+ 	font-size: .75rem;
+ 	font-weight: 700;
+ 	color: #1792D2;
+ 	text-align: center;
+ 	margin: 0 auto;
+ }
+
+ .container {
+ 	width: 90%;
+ 	max-width: 900px;
+ 	margin: 0 auto;
+ }
+
+ .wrapper {
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+
+ .nav-items {
+ 	padding: 0;
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .active {
+ 	border-bottom: 3px solid #707070;
+ }
+
+ .active:hover,
+ .active:focus {
+ 	color: #707070;
+ }
+	/* 
+		============
+		Page Content 
+		============
+	*/
+
+/*
+	Main Article.
+*/
+p {
+	color: #707070;
+	font-family: Ubuntu, sans-serif;
+	line-height: 1.5em;
+	font-size: 1rem;
+}
+
+@media (min-width: 700px) {
+	img {
+		width: 100%;
+		min-height: 14em;
+		display: block;
+		object-fit: cover;
+	}
+	/* La imagen de la planta de ve
+	desfazada */
+	#image-plant {
+		object-position: left;
+	}
+
+	.widget img {
+		width: 100%;
+		min-height: 14em;
+		display: block;
+		object-fit: cover;
+	}
+
+	.about-me-container img {
+		margin: 2em 0 1.5em 0;
+		width: 100%;
+		max-height: 300px;
+	}
+
+	.about-me-container h3 {
+		color: #1792d2;;
+	}
+
+	.sidebar p {
+		margin-bottom: 0;
+	}
+}
+
+h2 {
+	margin: 0;
+	margin-top: 1em;
+	font-family: Lora, sans-serif;
+	color: #143774;
+}
+
+
+h3 {
+	margin: 0;
+	text-align: left;
+	font: normal normal normal 24px/28px Lora;
+	color: #143774;
+}
+
+a {
+	color: #1792D2;
+}
+
+.content-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.featured-article {
+	padding-bottom: 1em;
+	border-bottom: 3px solid #707070;
+	margin: 2em 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.col-3 {
+	width: 65%;
+}
+
+.col-2 {
+	width: 45%;
+}
+
+.col-1 {
+	width: 20%; 
+}
+
+.continue-reading-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.continue-reading {
+	text-align: left;
+	font: normal normal bold 14px/28px Ubuntu;
+	letter-spacing: 2px;
+	color: #1792D2;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: right;
+}
+
+.continue-reading:hover {
+	text-decoration: underline;
+	color: #005DD0;
+}
+
+/* Article */
+
+.article {
+	margin: 2em 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.article-image-container {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.article-text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 68%;
+}
+
+.article-info {
+	margin: 0;
+	margin-top: .25rem;
+	font-size: .75rem;
+}
+
+	/* 
+		============
+		   Sidebar 
+		============
+	*/
+
+.sidebar {
+	margin-left: 1em;
+	margin-top: 2em;
+	width: 30%;
+	min-width: 250px;
+}
+
+.sidebar-widget {
+	padding: 1.5em;
+	margin-bottom: 2em;
+	border: 20px solid #EBEBEB;
+}
+
+.widget-title {
+	margin: 0 0 1em 0;
+	text-align: left;
+	font: normal normal bold 18px/28px Ubuntu;
+	letter-spacing: 3.6px;
+	color: #143774;
+	text-transform: uppercase;
+	opacity: 1;
+}
+
+.widget-recent-post-title {
+	margin-top: .5rem;
+	font: normal normal normal 1.25rem Lora;
+}
+
+.widget-recent-post {
+	padding-bottom: .75em;
+	margin-bottom: 1.25em;
+	border-bottom: 2px solid #707070;
+}
+
+/* Propiedad para que el ultimo widget no tenga la linea abajo. */
+.widget-recent-post:last-child {
+	padding: 0;
+	border-bottom: none;
+	margin: 0;
+}
+
+	/* 
+		============
+		   Footer 
+		============
+	*/
+footer {
+	text-align: center;
+	color: white;
+	padding: 2em 0;
+	background: #143774;
+}
+
+footer p {
+	margin-bottom: .5em;
+	color: inherit;
+	opacity: .75;
+}
+
+footer strong {
+	font-weight: 700;
+	color: white;
+}
+
+	/* 
+		============
+		   Media 
+		============
+	*/
+
+@media (max-width: 700px) {
+
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.nav-items {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav-items li {
+		margin: 1em 0;
+	}
+
+	/* Main */
+
+	.content-wrapper {
+		flex-direction: column;
+	}
+
+	.col-3 {
+		width: 100%;
+	}
+
+	.sidebar {
+		width: 100%;
+		margin: 0;
+	}
+
+	.sidebar-widget img,
+	.widget-recent-post img {
+		width: 100%;
+	}
+
+	/* Articles */
+	.title-info-container {
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	.title-info-container h3 {
+		order: -1;
+	}
+
+	.article-image-container {
+		width: 100%;
+	}
+
+	.article-text-container {
+		width: 100%;
+	}
+
+	.article {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.article-info {
+		text-align: right;
+		margin: 2em 0 0 0;
+	}
+
+	/* About Me */
+
+	.about-me-container img {
+		margin-top: 1em;
+		display: block;
+		width: 100%;
+		object-fit: cover;
+	}
+
+/* 
+	============
+	   About Me 
+	============
+*/
